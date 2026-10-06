@@ -32,27 +32,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barbô Barbearia | Corte e Barba em Taguatinga Norte - Brasília DF</title>
-  <meta name="description" content="Barbearia em Taguatinga Norte, Brasília DF. Corte de cabelo masculino, barba e acabamento com hora marcada. 4,8★ e 196 avaliações no Google. Agende no WhatsApp!">
+  <meta name="description" content="Barbearia em Taguatinga Norte, Brasília DF. Corte R$ 35 e corte + barba R$ 70, com hora marcada. 4,9★ e 256 avaliações no Google. Agende pelo WhatsApp!">
   <meta name="keywords" content="barbearia em Taguatinga, barbearia Taguatinga Norte, corte de cabelo masculino Brasília DF, barba, QNL, barbearia QNL 08">
   <meta name="author" content="Barbô Barbearia">
-  <link rel="canonical" href="https://www.barbobarbearia.com.br/">
+  <link rel="canonical" href="https://site-barbo.vercel.app/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="business.business">
   <meta property="og:title" content="Barbô Barbearia | Corte e Barba em Taguatinga Norte - Brasília DF">
-  <meta property="og:description" content="Corte e barba de respeito em Taguatinga Norte. 4,8★ com 196 avaliações no Google. Agende agora pelo WhatsApp.">
-  <meta property="og:image" content="img/corte5.jpeg">
-  <meta property="og:url" content="https://www.barbobarbearia.com.br/">
+  <meta property="og:description" content="Corte R$ 35 e corte + barba R$ 70 em Taguatinga Norte. 4,9★ com 256 avaliações no Google. Agende pelo WhatsApp.">
+  <meta property="og:image" content="https://site-barbo.vercel.app/img/corte5.jpeg">
+  <meta property="og:image:width" content="828">
+  <meta property="og:image:height" content="828">
+  <meta property="og:url" content="https://site-barbo.vercel.app/">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Barbô Barbearia">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Barbô Barbearia | Corte e Barba em Taguatinga Norte - Brasília DF">
-  <meta name="twitter:description" content="Corte e barba de respeito em Taguatinga Norte. 4,8★ com 196 avaliações no Google. Agende agora pelo WhatsApp.">
-  <meta name="twitter:image" content="img/corte5.jpeg">
+  <meta name="twitter:description" content="Corte R$ 35 e corte + barba R$ 70 em Taguatinga Norte. 4,9★ com 256 avaliações no Google. Agende pelo WhatsApp.">
+  <meta name="twitter:image" content="https://site-barbo.vercel.app/img/corte5.jpeg">
 
-  <!-- Favicon: substitua por um favicon.ico real na pasta img/ -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/favicon.png">
 
   <!-- Google Fonts: Oswald (display/script-like, forte, casa com o lettering da logo) + Inter (texto limpo) -->
@@ -68,9 +70,9 @@
     "@context": "https://schema.org",
     "@type": "Barbershop",
     "name": "Barbô Barbearia",
-    "image": "img/logo.svg",
-    "@id": "https://www.barbobarbearia.com.br/",
-    "url": "https://www.barbobarbearia.com.br/",
+    "image": "https://site-barbo.vercel.app/img/corte5.jpeg",
+    "@id": "https://site-barbo.vercel.app/",
+    "url": "https://site-barbo.vercel.app/",
     "telephone": "+5561982540870",
     "priceRange": "$$",
     "address": {
@@ -83,8 +85,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": -15.7797,
-      "longitude": -48.0700
+      "latitude": -15.824178,
+      "longitude": -48.077527
     },
     "openingHoursSpecification": [
       {
@@ -102,8 +104,8 @@
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "196"
+      "ratingValue": "4.9",
+      "reviewCount": "256"
     }
   }
   </script>
@@ -114,7 +116,7 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#inicio" class="header__logo">
-        <img src="img/logo.svg" alt="Logo Barbô Barbearia" width="72" height="72">
+        <img src="img/logo.png" alt="Logo Barbô Barbearia" width="72" height="72">
       </a>
 
       <nav class="nav" id="nav">
@@ -149,16 +151,23 @@
         <div class="hero__content fade-in">
           <h1 class="hero__title">Corte e barba de respeito em Taguatinga Norte</h1>
           <p class="hero__subtitle">
-            ⭐ 4,8 de avaliação com <strong>196 avaliações no Google</strong> — a barbearia de confiança da QNL 08, em Brasília - DF.
+            ⭐ 4,9 de avaliação com <strong>256 avaliações no Google</strong>. A barbearia de confiança da QNL 08, em Brasília - DF.
           </p>
           <a href="https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barb%C3%B4%21"
              class="btn btn-whatsapp btn--lg" id="whatsapp-hero" target="_blank" rel="noopener"
              onclick="return gtag_report_conversion('https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barb%C3%B4%21');">
             Agendar pelo WhatsApp
           </a>
+
+          <ul class="hero__prices">
+            <li><span>Corte</span><strong>R$ 35</strong></li>
+            <li><span>Corte + Barba</span><strong>R$ 70</strong></li>
+          </ul>
+
+          <a href="tel:+5561982540870" class="hero__phone">Prefere ligar? (61) 98254-0870</a>
         </div>
         <div class="hero__image fade-in">
-          <img src="img/corte5.jpeg" alt="Barbeiro finalizando corte de cabelo masculino na Barbô Barbearia" loading="eager">
+          <img src="img/corte2.jpeg" alt="Corte masculino com degradê e risco feito na Barbô Barbearia" width="808" height="808" loading="eager" fetchpriority="high">
         </div>
       </div>
     </section>
@@ -166,7 +175,7 @@
     <!-- PROVA SOCIAL -->
     <div class="social-bar">
       <div class="container social-bar__inner">
-        <p>⭐ 4,8 no Google &nbsp;·&nbsp; +196 avaliações &nbsp;·&nbsp; Barbearia em Taguatinga Norte - DF</p>
+        <p>⭐ 4,9 no Google &nbsp;·&nbsp; 256 avaliações &nbsp;·&nbsp; Corte R$ 35 &nbsp;·&nbsp; Corte + Barba R$ 70</p>
       </div>
     </div>
 
@@ -177,33 +186,43 @@
         <p class="section-subtitle fade-in">Cuidado completo para cabelo e barba, com hora marcada e profissionais experientes.</p>
 
         <div class="services__grid">
+
           <div class="service-card fade-in">
-            <img src="img/corte5.jpeg" alt="Corte de cabelo masculino na Barbô Barbearia" loading="lazy">
+            <img src="img/corte5.jpeg" alt="Corte de cabelo masculino na Barbô Barbearia" width="828" height="828" loading="lazy">
             <h3>Corte de Cabelo</h3>
-            <p>Cortes modernos e clássicos, personalizados para o seu estilo.</p>
-            <a href="https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barb%C3%B4%21" class="btn-whatsapp service-card__cta" target="_blank" rel="noopener" onclick="return gtag_report_conversion('https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barb%C3%B4%21');">Agendar</a>
+            <p class="service-card__desc">Cortes modernos e clássicos, personalizados para o seu estilo.</p>
+            <p class="service-card__price">R$ 35</p>
+            <a href="https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20corte%20%28R%24%2035%29%20na%20Barb%C3%B4%21" class="btn-whatsapp service-card__cta" target="_blank" rel="noopener"
+               onclick="return gtag_report_conversion('https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20corte%20%28R%24%2035%29%20na%20Barb%C3%B4%21');">Agendar</a>
           </div>
 
           <div class="service-card fade-in">
-            <img src="img/barba.jpeg" alt="Barba feita na Barbô Barbearia em Taguatinga" loading="lazy">
+            <img src="img/barba.jpeg" alt="Barba feita na Barbô Barbearia em Taguatinga" width="828" height="828" loading="lazy">
             <h3>Barba</h3>
-            <p>Alinhamento e desenho de barba com navalha e produtos de qualidade.</p>
-            <a href="https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barb%C3%B4%21" class="btn-whatsapp service-card__cta" target="_blank" rel="noopener" onclick="return gtag_report_conversion('https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barb%C3%B4%21');">Agendar</a>
+            <p class="service-card__desc">Alinhamento e desenho de barba com navalha e produtos de qualidade.</p>
+            <p class="service-card__price service-card__price--ask">Consulte</p>
+            <a href="https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20barba%20na%20Barb%C3%B4%21" class="btn-whatsapp service-card__cta" target="_blank" rel="noopener"
+               onclick="return gtag_report_conversion('https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20barba%20na%20Barb%C3%B4%21');">Agendar</a>
           </div>
 
           <div class="service-card fade-in">
-            <img src="img/barba-feita.jpeg" alt="Corte de cabelo e barba combo na Barbô Barbearia" loading="lazy">
+            <img src="img/barba-feita.jpeg" alt="Corte de cabelo e barba combo na Barbô Barbearia" width="828" height="828" loading="lazy">
             <h3>Corte + Barba</h3>
-            <p>O combo completo para renovar o visual com economia.</p>
-            <a href="https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barb%C3%B4%21" class="btn-whatsapp service-card__cta" target="_blank" rel="noopener" onclick="return gtag_report_conversion('https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barb%C3%B4%21');">Agendar</a>
+            <p class="service-card__desc">O combo completo para renovar o visual com economia.</p>
+            <p class="service-card__price">R$ 70</p>
+            <a href="https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20corte%20%2B%20barba%20%28R%24%2070%29%20na%20Barb%C3%B4%21" class="btn-whatsapp service-card__cta" target="_blank" rel="noopener"
+               onclick="return gtag_report_conversion('https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20corte%20%2B%20barba%20%28R%24%2070%29%20na%20Barb%C3%B4%21');">Agendar</a>
           </div>
 
           <div class="service-card fade-in">
-            <img src="img/corte.jpeg" alt="Acabamento e pezinho na Barbô Barbearia" loading="lazy">
+            <img src="img/corte.jpeg" alt="Acabamento e pezinho na Barbô Barbearia" width="960" height="1280" loading="lazy">
             <h3>Acabamento / Pezinho</h3>
-            <p>Aquele acabamento caprichado para manter o corte em dia.</p>
-            <a href="https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barb%C3%B4%21" class="btn-whatsapp service-card__cta" target="_blank" rel="noopener" onclick="return gtag_report_conversion('https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barb%C3%B4%21');">Agendar</a>
+            <p class="service-card__desc">Aquele acabamento caprichado para manter o corte em dia.</p>
+            <p class="service-card__price service-card__price--ask">Consulte</p>
+            <a href="https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20acabamento%2Fpezinho%20na%20Barb%C3%B4%21" class="btn-whatsapp service-card__cta" target="_blank" rel="noopener"
+               onclick="return gtag_report_conversion('https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20acabamento%2Fpezinho%20na%20Barb%C3%B4%21');">Agendar</a>
           </div>
+
         </div>
       </div>
     </section>
@@ -212,7 +231,7 @@
     <section class="about" id="sobre">
       <div class="container about__inner">
         <div class="about__image fade-in">
-          <img src="img/corte.jpeg" alt="Ambiente interno da Barbô Barbearia em Taguatinga Norte" loading="lazy">
+          <img src="img/corte.jpeg" alt="Ambiente interno da Barbô Barbearia em Taguatinga Norte" width="960" height="1280" loading="lazy">
         </div>
         <div class="about__content fade-in">
           <h2 class="section-title section-title--left">Sobre a Barbô Barbearia</h2>
@@ -238,12 +257,12 @@
         <p class="section-subtitle fade-in">Confira um pouco do nosso trabalho e do nosso espaço.</p>
 
         <div class="gallery__grid">
-          <div class="gallery__item fade-in"><img src="img/afro.jpeg" alt="Corte de cabelo realizado na Barbô Barbearia" loading="lazy"></div>
-          <div class="gallery__item fade-in"><img src="img/barba.jpeg" alt="Barba finalizada na Barbô Barbearia" loading="lazy"></div>
-          <div class="gallery__item fade-in"><img src="img/corte-3.jpeg" alt="Corte com desenho realizado na Barbô Barbearia" loading="lazy"></div>
-          <div class="gallery__item fade-in"><img src="img/corte.jpeg" alt="Cliente satisfeito com corte na Barbô Barbearia" loading="lazy"></div>
-          <div class="gallery__item fade-in"><img src="img/corte2.jpeg" alt="Detalhe de acabamento de corte masculino" loading="lazy"></div>
-          <div class="gallery__item fade-in"><img src="img/corte4.jpeg" alt="Barbeiro finalizando corte na Barbô Barbearia" loading="lazy"></div>
+          <div class="gallery__item fade-in"><img src="img/afro.jpeg" alt="Corte de cabelo realizado na Barbô Barbearia" width="828" height="1466" loading="lazy"></div>
+          <div class="gallery__item fade-in"><img src="img/barba.jpeg" alt="Barba finalizada na Barbô Barbearia" width="828" height="828" loading="lazy"></div>
+          <div class="gallery__item fade-in"><img src="img/corte-3.jpeg" alt="Corte com desenho realizado na Barbô Barbearia" width="828" height="828" loading="lazy"></div>
+          <div class="gallery__item fade-in"><img src="img/corte.jpeg" alt="Cliente satisfeito com corte na Barbô Barbearia" width="960" height="1280" loading="lazy"></div>
+          <div class="gallery__item fade-in"><img src="img/corte2.jpeg" alt="Detalhe de acabamento de corte masculino" width="808" height="808" loading="lazy"></div>
+          <div class="gallery__item fade-in"><img src="img/corte4.jpeg" alt="Barbeiro finalizando corte na Barbô Barbearia" width="828" height="1030" loading="lazy"></div>
         </div>
       </div>
     </section>
@@ -252,25 +271,29 @@
     <section class="testimonials">
       <div class="container">
         <h2 class="section-title fade-in">O que dizem nossos clientes</h2>
-        <p class="section-subtitle fade-in">Nota 4,8 ⭐ com 196 avaliações no Google.</p>
+        <p class="section-subtitle fade-in">Nota 4,9 ⭐ com 256 avaliações no Google.</p>
 
         <div class="testimonials__grid">
           <blockquote class="testimonial-card fade-in">
             <div class="stars">★★★★★</div>
-            <p>"Melhor barbearia de Taguatinga Norte! Atendimento pontual e corte impecável, saio sempre satisfeito."</p>
-            <cite>— Cliente Barbô Barbearia</cite>
+            <p>"Marquei para meu esposo corte e barba e para meu filho, eles gostaram muito, atendimento e do corte! Recomendo demais!"</p>
+            <cite>Taynara Vinhal <span>· avaliação no Google</span></cite>
           </blockquote>
           <blockquote class="testimonial-card fade-in">
             <div class="stars">★★★★★</div>
-            <p>"Profissionais muito atenciosos, ambiente limpo e organizado. Virei cliente fiel depois da primeira vez."</p>
-            <cite>— Cliente Barbô Barbearia</cite>
+            <p>"Nunca fui tão bem atendido em uma barbearia. O Anderson é simplesmente fenomenal no atendimento. O corte do Naldinho excelente, muito profissional, corte alinhado e rápido. Já virei cliente."</p>
+            <cite>Everton Rodrigo <span>· avaliação no Google</span></cite>
           </blockquote>
           <blockquote class="testimonial-card fade-in">
             <div class="stars">★★★★★</div>
-            <p>"Marquei horário pelo WhatsApp e fui atendido na hora certa. Recomendo demais o combo corte + barba!"</p>
-            <cite>— Cliente Barbô Barbearia</cite>
+            <p>"Hoje conheci a Barbô Barbearia e fiquei impressionado com o atendimento de excelência! Profissionais qualificados, ambiente top e um cuidado diferenciado em cada detalhe."</p>
+            <cite>Diego Rizzo <span>· avaliação no Google</span></cite>
           </blockquote>
         </div>
+
+        <p class="testimonials__link">
+          <a href="https://maps.google.com/maps?cid=8976545671639133224" target="_blank" rel="noopener">Ver as 256 avaliações no Google</a>
+        </p>
       </div>
     </section>
 
@@ -331,7 +354,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__col">
-        <img src="img/logo.svg" alt="Logo Barbô Barbearia" class="footer__logo" width="72" height="72" loading="lazy">
+        <img src="img/logo.png" alt="Logo Barbô Barbearia" class="footer__logo" width="72" height="72" loading="lazy">
         <p>St. L Norte QNL 08 Bloco G Lote 01 - Loja 01<br>Taguatinga Norte, Brasília - DF<br>CEP 72155-817</p>
       </div>
 
@@ -353,6 +376,7 @@
 
       <div class="footer__col">
         <h3>Fale conosco</h3>
+        <a href="tel:+5561982540870" class="footer__tel">Ligar: (61) 98254-0870</a>
         <a href="https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barb%C3%B4%21"
            class="btn-whatsapp" id="whatsapp-footer" target="_blank" rel="noopener"
            onclick="return gtag_report_conversion('https://wa.me/5561982540870?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barb%C3%B4%21');">

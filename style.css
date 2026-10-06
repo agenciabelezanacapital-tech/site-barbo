@@ -188,9 +188,11 @@ ul { list-style: none; }
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  /* Substitua por background-image: url('img/hero.jpg'); recomendado 1920x1080px */
-  background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
-  padding: 60px 0 50px;
+  background-color: #1A1A1A;
+  background-image: linear-gradient(135deg, rgba(10,9,8,0.82) 0%, rgba(26,26,26,0.70) 100%), url('img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  padding: 32px 0 40px;
 }
 
 .hero__overlay {
@@ -233,9 +235,14 @@ ul { list-style: none; }
   max-width: 420px;
   border-radius: var(--radius);
   margin: 0 auto;
-  aspect-ratio: 4/5;
+  /* No celular a foto fica baixa de proposito, para o titulo,
+     os precos e o botao caberem na primeira tela. */
+  aspect-ratio: 16/9;
+  max-height: 190px;
   object-fit: cover;
+  object-position: center 28%;
   border: 2px solid rgba(242,169,59,0.25);
+  display: block;
 }
 
 /* ---------- Barra de prova social ---------- */
@@ -308,10 +315,26 @@ section { padding: 70px 0; }
   margin: 18px 16px 8px;
 }
 
-.service-card p {
+.service-card__desc {
   color: var(--color-text-muted);
   font-size: 0.92rem;
-  margin: 0 16px 18px;
+  margin: 0 16px 10px;
+}
+
+.service-card__price {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 16px 16px;
+  line-height: 1.1;
+}
+
+.service-card__price--ask {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  padding-top: 8px;
 }
 
 .service-card__cta {
@@ -566,6 +589,7 @@ section { padding: 70px 0; }
   .hero__inner { flex-direction: row; text-align: left; }
   .hero__content { text-align: left; }
   .hero__subtitle { margin-left: 0; }
+  .hero__image img { aspect-ratio: 4/5; max-height: none; object-position: center; }
 
   .about__inner { flex-direction: row; }
   .about__image, .about__content { flex: 1; }
@@ -607,4 +631,84 @@ section { padding: 70px 0; }
 
   .services__grid { grid-template-columns: repeat(3, 1fr); }
   .footer__inner { grid-template-columns: repeat(4, 1fr); }
+}
+
+
+/* ---------- Precos no hero, telefone e creditos de avaliacao ---------- */
+.hero__prices {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 22px 0 0;
+  padding: 0;
+}
+
+.hero__prices li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 118px;
+  padding: 10px 16px;
+  border: 1px solid rgba(242,169,59,0.35);
+  border-radius: var(--radius);
+  background-color: rgba(10,9,8,0.55);
+}
+
+.hero__prices span {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.hero__prices strong {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  color: var(--color-accent);
+  line-height: 1.1;
+}
+
+.hero__phone,
+.footer__tel {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(242,169,59,0.45);
+  padding-bottom: 2px;
+  transition: color var(--transition);
+}
+
+.hero__phone:hover,
+.footer__tel:hover { color: var(--color-accent); }
+
+.footer__tel { margin: 0 0 12px; }
+
+.testimonial-card cite span {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  font-style: normal;
+  margin-top: 2px;
+}
+
+.testimonials__link {
+  text-align: center;
+  margin: 28px 0 0;
+}
+
+.testimonials__link a {
+  color: var(--color-accent);
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(242,169,59,0.4);
+  padding-bottom: 2px;
+}
+
+@media (min-width: 768px) {
+  .hero__prices { justify-content: flex-start; }
 }
